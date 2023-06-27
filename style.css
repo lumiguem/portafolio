@@ -84,9 +84,13 @@ span {
 }
 
 .navlist a {
+    display: inline-block;
     color: var(--text-color);
     font-weight: 500;
     padding: 10px 20px;
+    animation: slideAnimation 1s ease forwards;
+    animation-delay: calc(.3s * var(--i));
+    opacity: 0;
 }
 
 .navlist a:hover {
@@ -317,7 +321,7 @@ section {
 
 .img-box img {
     width: 100%;
-    max-width: 420px;
+    max-width: 390px;
     height: auto;
 }
 
@@ -629,7 +633,7 @@ section {
     text-align: center;
 }
 
-.filler-buttons .btn {
+.filler-buttons .button {
     background: none;
     outline: none;
     border: none;
@@ -641,7 +645,7 @@ section {
     color: var(--text-color);
 }
 
-.filler-buttons .btn:hover {
+.filler-buttons .button:hover {
     color: var(--hover-color);
 }
 
@@ -796,8 +800,29 @@ footer a i{
 }
 
 
+/* parallax------------------------------------------------------------------------------------- */
+.scroll-scale{
+    opacity: 0;
+    transform: scale(.9);
+    transition: all 2s;
+}
 
+.scroll-bottom{
+    opacity: 0;
+    transform: translateY(300px);
+    transition: 2s;
+}
 
+.scroll-top{
+    opacity: 0;
+    transform: translateY(-300px);
+    transition: 2s;
+}
+
+.show-items{
+    opacity: 1;
+    transform: translateX(0);
+}
 
 
 
@@ -869,7 +894,17 @@ footer a i{
     }
 }
 
+@keyframes slideAnimation{
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
 
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 
 
@@ -981,7 +1016,7 @@ footer a i{
         font-size: .6rem;
     }
 
-    .filler-buttons .btn{
+    .filler-buttons .button{
         font-size: .8rem;
     }
 
