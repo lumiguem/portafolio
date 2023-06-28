@@ -338,12 +338,6 @@ section {
     filter: blur(50px);
 }
 
-/* .img-about img{
-    width: 100%;
-    max-width: 320px;
-    height: auto;
-} */
-
 /* About Section css ----------------------------------------------------------- */
 
 .about {
@@ -357,6 +351,8 @@ section {
 .about .img-about {
     text-align: center;
     position: relative;
+    box-shadow: var(--neon-box-shadow);
+    
 }
 
 .about .img-about img {
