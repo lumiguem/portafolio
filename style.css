@@ -352,7 +352,7 @@ section {
     text-align: center;
     position: relative;
     box-shadow: var(--neon-box-shadow);
-    
+
 }
 
 .about .img-about img {
@@ -806,7 +806,7 @@ footer a i{
 .scroll-bottom{
     opacity: 0;
     transform: translateY(300px);
-    transition: 2s;
+    transition: 1s;
 }
 
 .scroll-top{
