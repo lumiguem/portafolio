@@ -515,8 +515,19 @@ section {
     grid-column-gap: 50px;
 }
 
+.skill-left {
+    display: grid;
+}
+
+.skills-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
 .skill-bar {
     margin-bottom: 2.3rem;
+    display: grid;
+    justify-content: center;
 }
 
 .skill-main h3 {
@@ -525,46 +536,25 @@ section {
     text-align: center;
 }
 
-.skill-left .skill-bar .info {
+
+.dev-skills {
+    display: grid;
+    justify-content: center;
+}
+.skill-bar img {
+    height: 100px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 0 10px;
+    
+}
+.skill-bar p {
+    display: flex;
+    justify-content: center;
 }
 
-.skill-left .skill-bar .bar {
-    width: 100%;
-    height: 10px;
-    background-color: var(--bg-color);
-    border-radius: 25px;
-    margin-top: 10px;
-    position: relative;
-}
 
-.skill-bar .bar span {
-    width: 50%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    background: var(--hover-color);
-    border-radius: 25px;
-    box-shadow: var(--neon-box-shadow);
-}
 
-.skill-bar .bar .html {
-    width: 72%;
-    animation: html 2s;
-}
 
-.skill-bar .bar .javascript {
-    width: 80%;
-    animation: javascript 3s;
-}
-
-.skill-bar .bar .css {
-    width: 62%;
-    animation: css 5s;
-}
 
 /* skill-right */
 .professional {
